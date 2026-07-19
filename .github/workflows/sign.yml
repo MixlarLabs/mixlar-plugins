@@ -26,8 +26,8 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install SDK (byte-faithful signer)
-        run: pip install --quiet "mixlar-sdk>=0.1.9"
+      - name: Install SDK (byte-faithful signer + scanner)
+        run: pip install --quiet "mixlar-sdk>=0.3.0"
 
       - name: Sign incoming & rebuild catalog
         env:

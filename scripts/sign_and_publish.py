@@ -27,7 +27,13 @@ import sys
 import tempfile
 
 from mixlar import packaging  # from the pip-installed mixlar-sdk
+from mixlar import permissions as _perms
+from mixlar import scan as _scan
 from mixlar.manifest import read_manifest
+
+# Set MIXLAR_ALLOW_HIGH_RISK=1 to sign despite high-risk findings (a human
+# reviewer explicitly overriding). Undeclared-capability use is always refused.
+_ALLOW_HIGH = os.environ.get("MIXLAR_ALLOW_HIGH_RISK") == "1"
 
 KEY_ID = "mixlar-registry-1"
 REPO_RAW = "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main"
@@ -65,6 +71,23 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
             return None
         pid = man["id"]
         version = man["version"]
+
+        # Security gate — the last automated check before we put the registry's
+        # signature on this code. Undeclared capability use is always refused;
+        # high-risk patterns are refused unless a reviewer set the override.
+        report = _scan.scan_package(folder)
+        declared = _perms.declared_caps(man)
+        undeclared, _ = _perms.diff(declared, report.capabilities)
+        if undeclared:
+            print(f"  ! {pid}: REFUSED — uses undeclared capabilities "
+                  f"{sorted(undeclared)} (declare them in permissions)", flush=True)
+            return None
+        if report.risk == _scan.HIGH and not _ALLOW_HIGH:
+            hits = "; ".join(f"{f.file}:{f.line} {f.message}" for f in report.high[:5])
+            print(f"  ! {pid}: REFUSED — high-risk code: {hits} "
+                  f"(set MIXLAR_ALLOW_HIGH_RISK=1 to override after review)", flush=True)
+            return None
+
         out_name = f"{pid}-{version}.mixplugin"
         dest_dir = os.path.join(PLUGINS, pid)
         os.makedirs(dest_dir, exist_ok=True)
