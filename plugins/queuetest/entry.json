@@ -1,0 +1,13 @@
+{
+  "author": "mixlar-ci",
+  "category": "Developer Tools",
+  "description": "Validates the pull-based publish queue + catalog cache.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/queuetest/queuetest-0.0.1.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.vial",
+  "icon_color": "#ff4d14",
+  "id": "queuetest",
+  "name": "Queue Test",
+  "sha256": "7ef322e4cd288dda45b7145fe905eb076fe356c98dacfa09c4e2dc64b81f8a89",
+  "version": "0.0.1"
+}
