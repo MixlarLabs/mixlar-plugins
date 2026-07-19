@@ -1,12 +1,10 @@
-name: Sign & publish submissions
+name: Pull, sign & publish (queue)
 
-# When the mixlar.net server pushes an approved submission into incoming/,
-# sign it with the mixlar-registry-1 key and relocate it into plugins/.
+# Polls mixlar.net for approved submissions, signs them, lists them, and pushes
+# the fresh catalog back — so the server never needs GitHub credentials.
 on:
-  push:
-    branches: [main]
-    paths:
-      - "incoming/**"
+  schedule:
+    - cron: "*/15 * * * *"   # every 15 minutes
   workflow_dispatch: {}
 
 concurrency:
@@ -17,7 +15,7 @@ permissions:
   contents: write
 
 jobs:
-  sign:
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,10 +24,16 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Install SDK (byte-faithful signer + scanner)
+      - name: Install SDK (signer + scanner)
         run: pip install --quiet "mixlar-sdk>=0.3.0"
 
-      - name: Sign incoming & rebuild catalog
+      - name: Pull approved submissions
+        env:
+          MIXLAR_QUEUE_URL: ${{ vars.MIXLAR_QUEUE_URL }}
+          REGISTRY_CALLBACK_SECRET: ${{ secrets.REGISTRY_CALLBACK_SECRET }}
+        run: python scripts/pull_queue.py
+
+      - name: Sign & rebuild catalog
         env:
           MIXLAR_SIGNING_KEY: ${{ secrets.MIXLAR_SIGNING_KEY }}
         run: python scripts/sign_and_publish.py
@@ -46,7 +50,7 @@ jobs:
             echo "Nothing to publish."
           fi
 
-      - name: Notify mixlar.net (results + catalog)
+      - name: Report back to mixlar.net (results + catalog)
         if: always()
         env:
           MIXLAR_CALLBACK_URL: ${{ vars.MIXLAR_CALLBACK_URL }}
