@@ -55,6 +55,8 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
         with open(meta_path, encoding="utf-8") as fh:
             meta = json.load(fh)
 
+    submission_id = meta.get("submission_id")
+
     with tempfile.TemporaryDirectory() as tmp:
         folder = packaging.unpack(mixplugin_path, tmp)
         man, err = read_manifest(folder)
@@ -100,7 +102,13 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
     os.remove(mixplugin_path)
     if os.path.exists(meta_path):
         os.remove(meta_path)
-    return pid
+    return {
+        "id": pid,
+        "version": version,
+        "sha256": sha,
+        "download_url": _download_url(pid, out_name),
+        "submission_id": submission_id,
+    }
 
 
 def _rebuild_catalog() -> int:
@@ -123,10 +131,13 @@ def main() -> int:
     if os.path.isdir(INCOMING):
         for name in sorted(os.listdir(INCOMING)):
             if name.endswith(".mixplugin"):
-                pid = _publish_one(os.path.join(INCOMING, name), seed)
-                if pid:
-                    published.append(pid)
+                res = _publish_one(os.path.join(INCOMING, name), seed)
+                if res:
+                    published.append(res)
     total = _rebuild_catalog()
+    # Drop a summary the workflow posts back to mixlar.net (best-effort).
+    with open(os.path.join(ROOT, "published.json"), "w", encoding="utf-8") as fh:
+        json.dump({"published": published}, fh)
     print(f"Published {len(published)}; catalog now lists {total} plugin(s).")
     return 0
 

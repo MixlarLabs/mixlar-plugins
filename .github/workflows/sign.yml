@@ -45,3 +45,19 @@ jobs:
           else
             echo "Nothing to publish."
           fi
+
+      - name: Notify mixlar.net (best-effort)
+        if: always()
+        env:
+          CALLBACK_URL: ${{ vars.MIXLAR_CALLBACK_URL }}
+          CALLBACK_SECRET: ${{ secrets.REGISTRY_CALLBACK_SECRET }}
+        run: |
+          if [ -f published.json ] && [ -n "$CALLBACK_URL" ] && [ -n "$CALLBACK_SECRET" ]; then
+            code=$(curl -s -o /dev/null -w "%{http_code}" -X POST "$CALLBACK_URL" \
+              -H "Authorization: Bearer $CALLBACK_SECRET" \
+              -H "Content-Type: application/json" \
+              --data @published.json || echo "000")
+            echo "callback HTTP $code"
+          else
+            echo "callback skipped (no summary or callback not configured)"
+          fi
