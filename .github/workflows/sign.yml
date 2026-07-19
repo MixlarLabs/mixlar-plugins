@@ -1,0 +1,47 @@
+name: Sign & publish submissions
+
+# When the mixlar.net server pushes an approved submission into incoming/,
+# sign it with the mixlar-registry-1 key and relocate it into plugins/.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "incoming/**"
+  workflow_dispatch: {}
+
+concurrency:
+  group: sign-publish
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  sign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install SDK (byte-faithful signer)
+        run: pip install --quiet "mixlar-sdk>=0.1.9"
+
+      - name: Sign incoming & rebuild catalog
+        env:
+          MIXLAR_SIGNING_KEY: ${{ secrets.MIXLAR_SIGNING_KEY }}
+        run: python scripts/sign_and_publish.py
+
+      - name: Commit results
+        run: |
+          git config user.name  "mixlar-registry[bot]"
+          git config user.email "registry@mixlar.net"
+          if [ -n "$(git status --porcelain)" ]; then
+            git add -A
+            git commit -m "registry: sign & publish approved submissions"
+            git push
+          else
+            echo "Nothing to publish."
+          fi
