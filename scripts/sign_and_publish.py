@@ -29,6 +29,7 @@ import tempfile
 from mixlar import packaging  # from the pip-installed mixlar-sdk
 from mixlar import permissions as _perms
 from mixlar import scan as _scan
+from mixlar import imaging as _imaging
 from mixlar.manifest import read_manifest
 
 # Set MIXLAR_ALLOW_HIGH_RISK=1 to sign despite high-risk findings (a human
@@ -120,6 +121,25 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
             "sha256": sha,
             "has_widget": bool(man.get("widgets")),
         }
+        # Custom plugin icon: if the plugin ships icon.png / hero.png / .jpg,
+        # normalize it to the one standard SQUARE size (512×512) and publish it
+        # next to the plugin; the catalog carries its URL. Square so the app can
+        # cover-crop it into the Discover hero AND scale it down to a small icon.
+        # Every plugin's icon is the same dimensions, so the store stays uniform.
+        src_img = None
+        for cand in ("icon.png", "icon.jpg", "icon.jpeg", "hero.png", "hero.jpg"):
+            cp = os.path.join(folder, cand)
+            if os.path.isfile(cp):
+                src_img = cp
+                break
+        if src_img:
+            png = _imaging.normalize_icon(src_img)
+            if png:
+                with open(os.path.join(dest_dir, "icon.png"), "wb") as fh:
+                    fh.write(png)
+                entry["image"] = _download_url(pid, "icon.png")
+                print(f"    · card image normalized to {_imaging.ICON_SIZE}", flush=True)
+
         # Optional store-only fields the app tolerates as extras.
         for k in ("long_description", "social_url", "github_url"):
             if meta.get(k):
