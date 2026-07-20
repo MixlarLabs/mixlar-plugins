@@ -69,7 +69,12 @@ jobs:
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
             git commit -m "registry: sign & publish approved submissions"
-            git push
+            # Rebase onto anything that landed while this run was queued, then
+            # push with retries — avoids the stale-checkout (fetch first) reject.
+            for i in 1 2 3; do
+              git pull --rebase --autostash origin main && git push && break
+              echo "push attempt $i failed; retrying"; sleep 5
+            done
           else
             echo "Nothing to publish."
           fi
