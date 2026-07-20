@@ -80,7 +80,8 @@ jobs:
           fi
 
       - name: Report back to mixlar.net (results + catalog)
-        if: always()
+        # Only after a SUCCESSFUL commit+push — otherwise we'd mark plugins live
+        # (and delete their staged files) for a push that never landed.
         env:
           MIXLAR_CALLBACK_URL: ${{ vars.MIXLAR_CALLBACK_URL }}
           REGISTRY_CALLBACK_SECRET: ${{ secrets.REGISTRY_CALLBACK_SECRET }}
