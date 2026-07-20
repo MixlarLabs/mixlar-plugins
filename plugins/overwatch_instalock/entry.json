@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Instantly lock your hero on the Overwatch 2 hero select screen.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/overwatch_instalock/overwatch_instalock-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.crosshairs",
+  "icon_color": "",
+  "id": "overwatch_instalock",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/overwatch_instalock/icon.png",
+  "name": "Overwatch Instalock",
+  "sha256": "bf3411acbe5b70c6fa559d948905ac9b60aac485d4773f8af73470b5d1cf82c4",
+  "version": "1.0.0"
+}

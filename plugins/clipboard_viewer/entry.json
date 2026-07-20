@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "See what's on your clipboard \u2014 text and images \u2014 with history, plus clear / paste-plain macros.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/clipboard_viewer/clipboard_viewer-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.clipboard",
+  "icon_color": "",
+  "id": "clipboard_viewer",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/clipboard_viewer/icon.png",
+  "name": "Clipboard",
+  "sha256": "273a5f839377031acc99c525835f25ec222764444ccf416d9d951abd25f57e52",
+  "version": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Bambu Studio on the deck \u2014 running-state, project name and a sliced print summary, with Slice + Send buttons and the full slicer shortcut catalog.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/bambu_studio/bambu_studio-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.cube",
+  "icon_color": "#00AE42",
+  "id": "bambu_studio",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/bambu_studio/icon.png",
+  "name": "Bambu Studio",
+  "sha256": "b55b152879290dd18f1a10ca82038a7d10cd6c5841e93d5067c216d31b322e02",
+  "version": "1.0.0"
+}

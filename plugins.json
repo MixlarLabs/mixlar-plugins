@@ -1,1 +1,72 @@
-[]
+[
+  {
+    "author": "Mixlar",
+    "category": "Other",
+    "description": "Switch or cycle the default output device from a button; microphone gain on a slider.",
+    "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/audio_devices/audio_devices-1.0.0.mixplugin",
+    "has_widget": false,
+    "icon": "fa5s.headphones",
+    "icon_color": "",
+    "id": "audio_devices",
+    "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/audio_devices/icon.png",
+    "name": "Audio Devices",
+    "sha256": "ff90780cac4a483418312216768835317394496ed0488a6232a2e803c57d8bb9",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Mixlar",
+    "category": "Other",
+    "description": "Bambu Studio on the deck \u2014 running-state, project name and a sliced print summary, with Slice + Send buttons and the full slicer shortcut catalog.",
+    "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/bambu_studio/bambu_studio-1.0.0.mixplugin",
+    "has_widget": true,
+    "icon": "fa5s.cube",
+    "icon_color": "#00AE42",
+    "id": "bambu_studio",
+    "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/bambu_studio/icon.png",
+    "name": "Bambu Studio",
+    "sha256": "b55b152879290dd18f1a10ca82038a7d10cd6c5841e93d5067c216d31b322e02",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Mixlar",
+    "category": "Other",
+    "description": "See what's on your clipboard \u2014 text and images \u2014 with history, plus clear / paste-plain macros.",
+    "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/clipboard_viewer/clipboard_viewer-1.0.0.mixplugin",
+    "has_widget": false,
+    "icon": "fa5s.clipboard",
+    "icon_color": "",
+    "id": "clipboard_viewer",
+    "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/clipboard_viewer/icon.png",
+    "name": "Clipboard",
+    "sha256": "273a5f839377031acc99c525835f25ec222764444ccf416d9d951abd25f57e52",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Mixlar",
+    "category": "Other",
+    "description": "Monitor brightness on a slider, plus displays-off, night mode, lock and sleep macros.",
+    "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/display_power/display_power-1.0.0.mixplugin",
+    "has_widget": false,
+    "icon": "fa5s.desktop",
+    "icon_color": "",
+    "id": "display_power",
+    "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/display_power/icon.png",
+    "name": "Display & Power",
+    "sha256": "6a1b36b35d6261e25d48e1216e2bca9714fdeea06f40db042083b54fa04bcec1",
+    "version": "1.0.0"
+  },
+  {
+    "author": "Mixlar",
+    "category": "Other",
+    "description": "Instantly lock your hero on the Overwatch 2 hero select screen.",
+    "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/overwatch_instalock/overwatch_instalock-1.0.0.mixplugin",
+    "has_widget": false,
+    "icon": "fa5s.crosshairs",
+    "icon_color": "",
+    "id": "overwatch_instalock",
+    "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/overwatch_instalock/icon.png",
+    "name": "Overwatch Instalock",
+    "sha256": "bf3411acbe5b70c6fa559d948905ac9b60aac485d4773f8af73470b5d1cf82c4",
+    "version": "1.0.0"
+  }
+]

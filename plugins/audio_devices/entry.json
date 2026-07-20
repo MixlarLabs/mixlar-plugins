@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Switch or cycle the default output device from a button; microphone gain on a slider.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/audio_devices/audio_devices-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.headphones",
+  "icon_color": "",
+  "id": "audio_devices",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/audio_devices/icon.png",
+  "name": "Audio Devices",
+  "sha256": "ff90780cac4a483418312216768835317394496ed0488a6232a2e803c57d8bb9",
+  "version": "1.0.0"
+}

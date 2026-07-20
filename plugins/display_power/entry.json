@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Monitor brightness on a slider, plus displays-off, night mode, lock and sleep macros.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/display_power/display_power-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.desktop",
+  "icon_color": "",
+  "id": "display_power",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/display_power/icon.png",
+  "name": "Display & Power",
+  "sha256": "6a1b36b35d6261e25d48e1216e2bca9714fdeea06f40db042083b54fa04bcec1",
+  "version": "1.0.0"
+}
