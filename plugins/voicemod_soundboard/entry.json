@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "A 6-pad soundboard plus voice-changer and mic-mute toggles for Voicemod \u2014 fires configurable hotkeys, with live state over the local Control API when a client key is set.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/voicemod_soundboard/voicemod_soundboard-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.microphone-alt",
+  "icon_color": "#FF2D78",
+  "id": "voicemod_soundboard",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/voicemod_soundboard/icon.png",
+  "name": "VoiceMod & Soundboard",
+  "sha256": "d5b289960d71f61025a8e25a17ff20832337f05e59a8693ecc621b04ca85ed78",
+  "version": "1.0.0"
+}

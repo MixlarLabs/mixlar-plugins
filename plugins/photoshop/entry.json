@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Adobe Photoshop on the deck: the active document name, zoom level and a modified indicator, with Save / Undo / Export buttons \u2014 plus shortcuts and opacity/brush sliders.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/photoshop/photoshop-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.image",
+  "icon_color": "#31A8FF",
+  "id": "photoshop",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/photoshop/icon.png",
+  "name": "Photoshop",
+  "sha256": "80d2fbab30a3058a65e909d5e62c7ee9312b12f066d26b792753cc554569c865",
+  "version": "1.0.0"
+}

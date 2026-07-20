@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Flash your deck when a game's taskbar icon flashes \u2014 know the instant your Overwatch or Valorant queue pops while you're tabbed out.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/queue_alert/queue_alert-1.0.1.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.gamepad",
+  "icon_color": "",
+  "id": "queue_alert",
+  "name": "Queue Alert",
+  "sha256": "34ac1ba3f38aaa37adfffb40aee6c4bb9efcf761d8183df3636f410a1a9cf47f",
+  "version": "1.0.1"
+}

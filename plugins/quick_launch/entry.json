@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Launch apps, files, URLs or Steam games (steam://run/<appid>) from macro buttons.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/quick_launch/quick_launch-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.rocket",
+  "icon_color": "",
+  "id": "quick_launch",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/quick_launch/icon.png",
+  "name": "Quick Launch",
+  "sha256": "086020cfd558ebf717891de68da2ce69d81bb08890c02b35cfc7e334aa1df1d4",
+  "version": "1.0.0"
+}

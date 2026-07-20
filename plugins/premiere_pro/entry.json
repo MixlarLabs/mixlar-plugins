@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Adobe Premiere Pro on the deck: the active project name and transport state, with Play/Pause, Mark In and Export buttons \u2014 plus shortcuts and JKL/zoom sliders.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/premiere_pro/premiere_pro-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.film",
+  "icon_color": "#9999FF",
+  "id": "premiere_pro",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/premiere_pro/icon.png",
+  "name": "Premiere Pro",
+  "sha256": "c3b50da12f1756ae9adb685ca283ae2bd6a999d900ee1e530fb4e6c020389a9c",
+  "version": "1.0.0"
+}

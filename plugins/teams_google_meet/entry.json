@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Microsoft Teams or Google Meet on the deck: in-call status, live timer, mic/cam state and Mute/Video/Leave buttons \u2014 plus meeting shortcuts and volume sliders.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/teams_google_meet/teams_google_meet-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.users",
+  "icon_color": "#6264A7",
+  "id": "teams_google_meet",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/teams_google_meet/icon.png",
+  "name": "Teams & Google Meet",
+  "sha256": "3e8c8e12554ab7bd7b9e581d4d0f996b1a0299f47b3d7c5c0c409cee8047207e",
+  "version": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Panic buttons: mute EVERY microphone, or kill the webcam system-wide (Windows privacy switch).",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/privacy_guard/privacy_guard-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.user-shield",
+  "icon_color": "",
+  "id": "privacy_guard",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/privacy_guard/icon.png",
+  "name": "Privacy Guard",
+  "sha256": "79a11176e1a0499a4314cd731956d8a5e137d64940247c56599ee48e0367c02a",
+  "version": "1.0.0"
+}

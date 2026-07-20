@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Now-playing track, album art and transport controls on the device \u2014 driven by this PC's Spotify. A v2-plugin take on the built-in Spotify screen (widget-tile sized). Uses the app's Spotify sign-in; no separate login.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/spotifyw/spotifyw-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5b.spotify",
+  "icon_color": "#1DB954",
+  "id": "spotifyw",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/spotifyw/icon.png",
+  "name": "Spotify",
+  "sha256": "9f942ea900aa03cecdccb32ea2a941dbf9c8da180f69e13d7ab8f1e4c453ed46",
+  "version": "1.0.0"
+}

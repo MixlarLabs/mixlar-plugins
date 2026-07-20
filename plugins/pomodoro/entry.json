@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Focus sessions: start/pause/reset from buttons, session length on a slider, chime on finish.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/pomodoro/pomodoro-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.stopwatch",
+  "icon_color": "",
+  "id": "pomodoro",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/pomodoro/icon.png",
+  "name": "Pomodoro",
+  "sha256": "d802e55c1c0c2bed93a6b9bd8222620d37dea061ba84c7b9df77b7b353917e2d",
+  "version": "1.0.0"
+}

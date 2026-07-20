@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "On-call status on the deck \u2014 are you on call now, open incidents by urgency, the top incident title, and one-tap Acknowledge, live from the PagerDuty REST API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/pagerduty/pagerduty-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.bell",
+  "icon_color": "#06AC38",
+  "id": "pagerduty",
+  "name": "PagerDuty",
+  "sha256": "83d9e260b7e89a539a3eb653eceac33b76bdc04fa162ae3b1e0446120587d20b",
+  "version": "1.0.0"
+}

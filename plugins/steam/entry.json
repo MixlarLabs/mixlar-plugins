@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your Steam status on the deck \u2014 Online / Away / In-Game LED, what you're playing (or friends online), and recent playtime for your current or last game, from the Steam Web API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/steam/steam-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5b.steam",
+  "icon_color": "#66C0F4",
+  "id": "steam",
+  "name": "Steam",
+  "sha256": "901c900907a0647c3746e9999db6d343eef3d8cbec1d04793449f449824159f0",
+  "version": "1.0.0"
+}

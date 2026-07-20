@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your Philips Hue room on the deck \u2014 live on/off, brightness and current color, with On / Off / Scene buttons over the local Bridge REST API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/philips_hue/philips_hue-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.lightbulb",
+  "icon_color": "#FFB800",
+  "id": "philips_hue",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/philips_hue/icon.png",
+  "name": "Philips Hue",
+  "sha256": "5288c9d8f72de10d30beae952873e80014ee27ff135386016187f683e7c756bf",
+  "version": "1.0.0"
+}

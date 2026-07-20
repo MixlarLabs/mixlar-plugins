@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your car at a glance \u2014 battery arc (color-coded), range, charging state + target, and a lock/climate line. Talks the Fleet-API vehicle_data shape via your own proxy (Tessie / teslapy / Fleet).",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/tesla_ev/tesla_ev-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.car",
+  "icon_color": "#E82127",
+  "id": "tesla_ev",
+  "name": "Tesla / EV",
+  "sha256": "9343e10a56378231708f7101a6922f6e14ff22b0a4aa5af3801ed977e3fd2faa",
+  "version": "1.0.0"
+}

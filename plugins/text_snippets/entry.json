@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Paste canned text blocks from macro buttons \u2014 sign-offs, replies, code, emoji.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/text_snippets/text_snippets-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.i-cursor",
+  "icon_color": "",
+  "id": "text_snippets",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/text_snippets/icon.png",
+  "name": "Text Snippets",
+  "sha256": "0f42129ce0f0df669e38d671f76b892d95488324268c679eb6038fccbbaa2a97",
+  "version": "1.0.0"
+}

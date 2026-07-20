@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "VLC on the deck \u2014 live now-playing title, progress and volume with prev / play-pause / next, over VLC's HTTP interface.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/vlc_remote/vlc_remote-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.play-circle",
+  "icon_color": "#FF8800",
+  "id": "vlc_remote",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/vlc_remote/icon.png",
+  "name": "VLC Remote",
+  "sha256": "791ae78e966b36fbfb79a49c222533f77cbcce5324294b0bfd0a215975f9d06f",
+  "version": "1.0.0"
+}

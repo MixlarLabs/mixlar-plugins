@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Is your favorite streamer live? A glance at your channel or one you follow \u2014 live LED, game/category, big viewer count and the stream title, straight from the Twitch Helix API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/twitch/twitch-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5b.twitch",
+  "icon_color": "#9146FF",
+  "id": "twitch",
+  "name": "Twitch",
+  "sha256": "c924770ddcbf9d8f16fdd8ba284dce5eb7279739f807b1dcac418954d4bdcd52",
+  "version": "1.0.0"
+}

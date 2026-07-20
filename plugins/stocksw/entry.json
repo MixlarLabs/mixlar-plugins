@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Live stock quotes (price + % change) on the device via yfinance. A v2-plugin take on the built-in Stocks widget. Symbols configurable in the plugin settings.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/stocksw/stocksw-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.chart-line",
+  "icon_color": "#34C759",
+  "id": "stocksw",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/stocksw/icon.png",
+  "name": "Stocks",
+  "sha256": "e4f3612c5cac01dda955a1d041a8c0b2cc7e6d5d8c17b9ef59023ed2c65cdf95",
+  "version": "1.0.0"
+}

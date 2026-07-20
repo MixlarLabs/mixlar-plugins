@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Now playing on your media server \u2014 title, show/artist, a progress bar with elapsed time, the player and user, and a play/pause LED. Works with Plex or Jellyfin, with Play/Pause and Stop from the deck.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/plex_jellyfin/plex_jellyfin-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.play-circle",
+  "icon_color": "#E5A00D",
+  "id": "plex_jellyfin",
+  "name": "Plex / Jellyfin",
+  "sha256": "24a7710c55076d72958a9d673f778ef01ea83359c3b0cde88c249bb9f3c94c4e",
+  "version": "1.0.0"
+}

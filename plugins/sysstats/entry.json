@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Live CPU and RAM usage on the device, read from this PC (psutil). A v2-plugin take on the built-in Stats widget.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/sysstats/sysstats-1.1.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.microchip",
+  "icon_color": "#FF9500",
+  "id": "sysstats",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/sysstats/icon.png",
+  "name": "System Stats",
+  "sha256": "700390857b1e04b0f85f5cc7814e82376c6c1725560dd4a630e069caf76100b0",
+  "version": "1.1.0"
+}

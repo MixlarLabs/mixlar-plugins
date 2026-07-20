@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Today's body on the deck. Strava: latest activity + weekly distance. Oura: readiness/sleep score arc (color-coded) with HRV + resting HR. Bearer APIs with lazy Strava token refresh.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/strava_oura/strava_oura-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.running",
+  "icon_color": "#FC4C02",
+  "id": "strava_oura",
+  "name": "Strava / Oura",
+  "sha256": "640537579d00558da38dadd955200694d8c606e0f9f4e3a7d7d234d432583d85",
+  "version": "1.0.0"
+}
