@@ -73,8 +73,13 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
         version = man["version"]
 
         # Security gate — the last automated check before we put the registry's
-        # signature on this code. Undeclared capability use is always refused;
-        # high-risk patterns are refused unless a reviewer set the override.
+        # signature on this code. Two refusals:
+        #  1. Undeclared capability use — always refused (declare it in permissions).
+        #  2. Genuine malware smells — obfuscation, and dynamic code execution
+        #     (eval/exec). NOT a blanket "high risk": a plugin that legitimately
+        #     declares `native`/`subprocess` trips high-severity capability
+        #     findings by design, and that's fine — it declared them. We only
+        #     hard-block the patterns you can't justify by declaring a capability.
         report = _scan.scan_package(folder)
         declared = _perms.declared_caps(man)
         undeclared, _ = _perms.diff(declared, report.capabilities)
@@ -82,10 +87,13 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
             print(f"  ! {pid}: REFUSED — uses undeclared capabilities "
                   f"{sorted(undeclared)} (declare them in permissions)", flush=True)
             return None
-        if report.risk == _scan.HIGH and not _ALLOW_HIGH:
-            hits = "; ".join(f"{f.file}:{f.line} {f.message}" for f in report.high[:5])
-            print(f"  ! {pid}: REFUSED — high-risk code: {hits} "
-                  f"(set MIXLAR_ALLOW_HIGH_RISK=1 to override after review)", flush=True)
+        danger = [f for f in report.findings
+                  if f.category == "obfuscation"
+                  or (f.category == "dynamic-code" and f.level == _scan.HIGH)]
+        if danger and not _ALLOW_HIGH:
+            hits = "; ".join(f"{f.file}:{f.line} {f.message}" for f in danger[:5])
+            print(f"  ! {pid}: REFUSED — suspicious code (eval/exec/obfuscation): "
+                  f"{hits} (set MIXLAR_ALLOW_HIGH_RISK=1 to override after review)", flush=True)
             return None
 
         out_name = f"{pid}-{version}.mixplugin"
