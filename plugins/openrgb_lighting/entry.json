@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your whole rig's RGB on the deck \u2014 live device count and current mode/color via the OpenRGB SDK, with Solid / Rainbow / Off buttons.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/openrgb_lighting/openrgb_lighting-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.keyboard",
+  "icon_color": "#FF453A",
+  "id": "openrgb_lighting",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/openrgb_lighting/icon.png",
+  "name": "OpenRGB Lighting",
+  "sha256": "795effaaaa2129f3fc42413db19cd9b7c0ee650ecf20a82558bd5d50fbd9410a",
+  "version": "1.0.0"
+}

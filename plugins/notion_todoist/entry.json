@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "What's due today on the deck \u2014 task count, the next task with its time, and an overdue alert. Reads Todoist REST or a Notion tasks database; Complete + Refresh buttons.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/notion_todoist/notion_todoist-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.check-circle",
+  "icon_color": "#E44332",
+  "id": "notion_todoist",
+  "name": "Notion / Todoist",
+  "sha256": "69517eddf144348fdf5808e053da17829b7b8cf8b6df548a0af2ea3eb84d225b",
+  "version": "1.0.0"
+}

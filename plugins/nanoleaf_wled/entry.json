@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Nanoleaf panels or a WLED strip on the deck \u2014 live on/off, brightness and current effect, with On / Off / Next-effect buttons over the local API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/nanoleaf_wled/nanoleaf_wled-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.th",
+  "icon_color": "#BF5AF2",
+  "id": "nanoleaf_wled",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/nanoleaf_wled/icon.png",
+  "name": "Nanoleaf & WLED",
+  "sha256": "4bf505b95a7e087f2b2cc81d6e17cb0560478371f26628e40264d3bb6f1cbbb6",
+  "version": "1.0.0"
+}

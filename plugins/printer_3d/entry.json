@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Any 3D printer on the deck \u2014 live progress, nozzle/bed temps and layer count. Supports OctoPrint, Klipper/Moonraker, FlashForge, Bambu Lab (LAN MQTT) and Bambu Cloud. A 1:1 clone of the built-in printer widget.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/printer_3d/printer_3d-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.cube",
+  "icon_color": "#00AED6",
+  "id": "printer_3d",
+  "name": "3D Printer",
+  "sha256": "6d6664619a46029173e21cf9300afefee693ffa18cd43f374e104c35d616b1e8",
+  "version": "1.0.0"
+}
