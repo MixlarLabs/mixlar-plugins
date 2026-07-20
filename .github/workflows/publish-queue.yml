@@ -1,22 +1,46 @@
 name: Pull, sign & publish (queue)
 
-# Polls mixlar.net for approved submissions, signs them, lists them, and pushes
-# the fresh catalog back — so the server never needs GitHub credentials.
+# Two-stage, key-protected publishing:
+#   1. `check` (ungated) peeks the queue — no signing key, no approval.
+#   2. `sign`  runs ONLY when there's work, in the `signing` environment, which
+#      requires a human reviewer to approve before the signing key is released.
+# So even a compromised push can't auto-sign: the key never enters a job until a
+# maintainer approves the deployment in GitHub.
 on:
   schedule:
-    - cron: "*/15 * * * *"   # every 15 minutes
+    - cron: "*/15 * * * *"
   workflow_dispatch: {}
 
 concurrency:
   group: sign-publish
   cancel-in-progress: false
 
-permissions:
-  contents: write
-
 jobs:
-  publish:
+  check:
     runs-on: ubuntu-latest
+    outputs:
+      has_work: ${{ steps.peek.outputs.has_work }}
+    steps:
+      - name: Peek the queue (no key, no approval)
+        id: peek
+        env:
+          MIXLAR_QUEUE_URL: ${{ vars.MIXLAR_QUEUE_URL }}
+          REGISTRY_CALLBACK_SECRET: ${{ secrets.REGISTRY_CALLBACK_SECRET }}
+        run: |
+          n=$(curl -s -X POST "$MIXLAR_QUEUE_URL?peek=1" \
+                -H "Authorization: Bearer $REGISTRY_CALLBACK_SECRET" | jq -r '.count // 0')
+          echo "approved submissions waiting: $n"
+          if [ "${n:-0}" -gt 0 ]; then echo "has_work=true" >> "$GITHUB_OUTPUT"; else echo "has_work=false" >> "$GITHUB_OUTPUT"; fi
+
+  sign:
+    needs: check
+    if: needs.check.outputs.has_work == 'true'
+    runs-on: ubuntu-latest
+    # The gate: this job can't start until a required reviewer approves it in
+    # GitHub, and only then is MIXLAR_SIGNING_KEY (an environment secret) exposed.
+    environment: signing
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
