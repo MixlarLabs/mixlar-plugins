@@ -132,7 +132,7 @@ def _publish_one(mixplugin_path: str, seed: str) -> str | None:
             if os.path.isfile(cp):
                 src_img = cp
                 break
-        if src_img:
+        if src_img and hasattr(_imaging, "normalize_icon"):
             png = _imaging.normalize_icon(src_img)
             if png:
                 with open(os.path.join(dest_dir, "icon.png"), "wb") as fh:
