@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "A simple clock widget \u2014 time and date pushed from this PC. A v2-plugin take on the built-in Clock (display only; no alarm/stopwatch).",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/clockw/clockw-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.clock",
+  "icon_color": "#FFB340",
+  "id": "clockw",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/clockw/icon.png",
+  "name": "Clock",
+  "sha256": "fca62b0575fffde106a63a7f947e4f6ff1e76f5c43d0fbfd0097c4cb29da97b0",
+  "version": "1.0.0"
+}

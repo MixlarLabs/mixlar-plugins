@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your next Canvas assignments \u2014 course, due date and urgency \u2014 on the deck. Tap Open to launch the top one in your browser. Set canvas_host + canvas_token.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/canvas_lms/canvas_lms-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.graduation-cap",
+  "icon_color": "",
+  "id": "canvas_lms",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/canvas_lms/icon.png",
+  "name": "Canvas",
+  "sha256": "a084d9543f3adc0c22fc330bf7bbb3d5bae6717f289abc0c178143a431b1a4a9",
+  "version": "1.0.0"
+}

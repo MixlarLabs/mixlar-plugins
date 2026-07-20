@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "A live temperature forecast chart on the deck (mixw 2) \u2014 the next 12h drawn natively as a chart, big current temp whose color the device computes cold/mild/hot, a condition label, and today's hi/lo. Powered by Open-Meteo (no key).",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/weather_forecast/weather_forecast-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.cloud-sun",
+  "icon_color": "#0A84FF",
+  "id": "weather_forecast",
+  "name": "Weather Forecast",
+  "sha256": "f7b25c0c26a552b9985db0f73022472d59d6446cc89781dc129458c159bb983f",
+  "version": "1.0.0"
+}

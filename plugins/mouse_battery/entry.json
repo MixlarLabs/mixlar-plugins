@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Live battery + charging status for your Logitech wireless mouse (G HUB), with a bundled device widget.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/mouse_battery/mouse_battery-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.mouse",
+  "icon_color": "",
+  "id": "mouse_battery",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/mouse_battery/icon.png",
+  "name": "Mouse Battery",
+  "sha256": "c662326951559a7f60e201fad1651c540ddc978aaae4b89fb187d872e79bad4b",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your dev pulse on the deck \u2014 PRs to review, open issues, notifications and the latest CI run status for a repo, live from the GitHub REST API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/github/github-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5b.github",
+  "icon_color": "#2EA043",
+  "id": "github",
+  "name": "GitHub",
+  "sha256": "c9cedca5dd9bdda56cf682fd23006190c2427764c74c1f57d3c0e6d38e528f92",
+  "version": "1.0.0"
+}

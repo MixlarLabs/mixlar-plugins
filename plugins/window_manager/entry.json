@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Snap, move between monitors, pin on top \u2014 and put the focused window's opacity on a slider.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/window_manager/window_manager-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.window-restore",
+  "icon_color": "",
+  "id": "window_manager",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/window_manager/icon.png",
+  "name": "Window Manager",
+  "sha256": "af0cb96320e250dae59a4c1380c380de08443ca22caa356c69ee5d31e38f7612",
+  "version": "1.0.0"
+}

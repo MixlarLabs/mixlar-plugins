@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Live CPU load history chart (V2) \u2014 a filled line graph of the last ~40 samples with a reactive current-load readout, plus a best-effort GPU line, load and core count.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/cpu_history/cpu_history-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.microchip",
+  "icon_color": "#0A84FF",
+  "id": "cpu_history",
+  "name": "CPU History",
+  "sha256": "6b4f525cf46afcf27154bc088fb5cb976fd4d94235a02429fcf1e205ea0704fd",
+  "version": "1.0.0"
+}

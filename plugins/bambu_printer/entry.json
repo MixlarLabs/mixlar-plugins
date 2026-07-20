@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your Bambu Lab printer on the deck \u2014 live progress, nozzle/bed temps and layer count over local MQTT. A 1:1 clone of the built-in printer widget.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/bambu_printer/bambu_printer-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.print",
+  "icon_color": "#00AED6",
+  "id": "bambu_printer",
+  "name": "Bambu Printer",
+  "sha256": "ff09842521a061ed618a66f3cedbcc1886ee6fbebe2211771e404f2afc4e74d9",
+  "version": "1.0.0"
+}

@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "A live coin price chart on the deck (mixw 2) \u2014 a filled 24h price chart drawn natively, big current price, symbol, and a 24h % change whose color the device computes green/red. Powered by the free CoinGecko API.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/crypto_chart/crypto_chart-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5b.bitcoin",
+  "icon_color": "#F7931A",
+  "id": "crypto_chart",
+  "name": "Crypto Chart",
+  "sha256": "30b805d55f19d1e5060fa3fc969d4c20afba7cf955b960525080dea266ada880",
+  "version": "1.0.0"
+}

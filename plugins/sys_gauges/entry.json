@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Reactive system gauge cluster (V2) \u2014 CPU, RAM and Disk ring gauges whose colors are computed on-device from each value (green / orange / red).",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/sys_gauges/sys_gauges-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.tachometer-alt",
+  "icon_color": "#BF5AF2",
+  "id": "sys_gauges",
+  "name": "System Gauges",
+  "sha256": "3d748bbb9d2868566fb2061d29c2af58ab1fda83e68a72af85af87efb3de511a",
+  "version": "1.0.0"
+}

@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Zoom in-meeting status + controls on the deck: live meeting timer, mic/cam state and Mute/Video/Leave buttons \u2014 plus meeting shortcuts and volume sliders.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/zoom/zoom-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.video",
+  "icon_color": "#2D8CFF",
+  "id": "zoom",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/zoom/icon.png",
+  "name": "Zoom",
+  "sha256": "7b70e7f7812e973ac7fac2cb8f9ec8f32076d32c4f2b7b78b58049db0105681c",
+  "version": "1.0.0"
+}

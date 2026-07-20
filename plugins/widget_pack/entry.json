@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "A big pack of ready-to-use device widgets \u2014 weather, crypto & stocks, portfolio, system/GPU monitors, air quality, moon phase, clocks, timers and more \u2014 all in one plugin.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/widget_pack/widget_pack-1.4.1.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.th-large",
+  "icon_color": "#5AC8FA",
+  "id": "widget_pack",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/widget_pack/icon.png",
+  "name": "Widget Pack",
+  "sha256": "1270c1cd3ddbd02f1f4a90d2755935de69ce6528c83d3074b4efadb93973426a",
+  "version": "1.4.1"
+}

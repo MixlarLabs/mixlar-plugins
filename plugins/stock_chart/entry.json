@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "A live intraday stock chart on the deck (mixw 2) \u2014 a filled sparkline drawn natively, big current price, ticker symbol, and a day % change whose color the device computes green/red. Powered by Yahoo Finance (no key).",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/stock_chart/stock_chart-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.chart-line",
+  "icon_color": "#30D158",
+  "id": "stock_chart",
+  "name": "Stock Chart",
+  "sha256": "caa7eabc93b8610a387ecaae852ae26fcdae3fa1e5a7e79419949cb501179b05",
+  "version": "1.0.0"
+}

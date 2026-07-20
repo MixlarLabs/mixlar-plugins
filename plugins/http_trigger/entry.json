@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Minimal plugin template: GET/POST macro actions and an HTTP slider mode. No device widget.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/http_trigger/http_trigger-1.0.0.mixplugin",
+  "has_widget": false,
+  "icon": "fa5s.globe",
+  "icon_color": "",
+  "id": "http_trigger",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/http_trigger/icon.png",
+  "name": "HTTP Trigger",
+  "sha256": "cc8fb9461aefcb90d1dd4996819b2e5495079a74f3002d440104d30094eb9b0a",
+  "version": "1.0.0"
+}

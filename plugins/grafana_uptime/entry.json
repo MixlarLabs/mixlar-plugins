@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Is everything up? Services up / total, worst-status line, %-up bar and an overall health LED \u2014 from an Uptime-Kuma status page or Grafana alerting.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/grafana_uptime/grafana_uptime-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.heartbeat",
+  "icon_color": "#F46800",
+  "id": "grafana_uptime",
+  "name": "Grafana / Uptime-Kuma",
+  "sha256": "a2f04194b06712ed3ce953f22213619e39bf9c22e2e054abf65f3dbc1d2212f5",
+  "version": "1.0.0"
+}

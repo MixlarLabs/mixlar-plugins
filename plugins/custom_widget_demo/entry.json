@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Reference multi-widget plugin: live CPU/RAM stats, interactive dashboard, page menus, QR hub and the element test lab.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/custom_widget_demo/custom_widget_demo-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.microchip",
+  "icon_color": "",
+  "id": "custom_widget_demo",
+  "name": "Custom Widget Demo",
+  "sha256": "c9499f4ab158864f663d60c87352359e8a16b56c9fa4777b48bdadd4ffbef6dd",
+  "version": "1.0.0"
+}

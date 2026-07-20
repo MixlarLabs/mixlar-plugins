@@ -1,0 +1,14 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Your Govee light on the deck \u2014 live on/off, brightness and current color via the Govee cloud API, with On / Off / Color buttons.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/govee_light/govee_light-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.lightbulb",
+  "icon_color": "#1BE0C8",
+  "id": "govee_light",
+  "image": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/govee_light/icon.png",
+  "name": "Govee Light",
+  "sha256": "430f90fd6434fe327285a800baaaf1ddc025d9340dc05fc10525683631c5f1ed",
+  "version": "1.0.0"
+}

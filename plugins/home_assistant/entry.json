@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Control a room from the deck \u2014 current vs target temperature, how many lights are on, and a headline entity's state, over the Home Assistant REST API. Lights On / Off and a Scene button included.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/home_assistant/home_assistant-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.home",
+  "icon_color": "#03A9F4",
+  "id": "home_assistant",
+  "name": "Home Assistant",
+  "sha256": "10baada91436715a51d585c6fa03cf27b26797642e92125221b77fcb43e69ef5",
+  "version": "1.0.0"
+}

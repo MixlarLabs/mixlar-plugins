@@ -1,0 +1,13 @@
+{
+  "author": "Mixlar",
+  "category": "Other",
+  "description": "Live network throughput chart (V2) \u2014 a rolling line graph of download and upload rates with computed KB/MB units and a spike-reactive accent color.",
+  "download_url": "https://raw.githubusercontent.com/MixlarLabs/mixlar-plugins/main/plugins/net_throughput/net_throughput-1.0.0.mixplugin",
+  "has_widget": true,
+  "icon": "fa5s.network-wired",
+  "icon_color": "#30D158",
+  "id": "net_throughput",
+  "name": "Network Graph",
+  "sha256": "6231d97f1bbd94e016f63ef01054e2f8e9a082ba0812d16522951e0e390dffae",
+  "version": "1.0.0"
+}
